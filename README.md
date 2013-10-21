@@ -1,4 +1,4 @@
-Color Picker 1.0.1
+Color Picker 1.0.2
 ==================
 
 Hello. Thank you for downloading the Color Picker plug-in for Coda 2.
@@ -54,9 +54,13 @@ Color Picker is distributed under The MIT License (MIT). Please refer to 'LICENS
 Changelog
 =========
 
+Version 1.0.2
+
+* If a hex value is selected in the current document, the color picker will display that color as it's initial value
+
 Version 1.0.1
 
-Fixed a bug where the color panel would still send change notifications to the editor (thus writing whatever color was chosen) when using the theme color picker in Coda's preference panel.
+* Fixed a bug where the color panel would still send change notifications to the editor (thus writing whatever color was chosen) when using the theme color picker in Coda's preference panel.
 
 Version 1.0
 

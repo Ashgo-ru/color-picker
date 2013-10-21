@@ -8,6 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 #import "CodaPlugInsController.h"
+#import "HexColor.h"
 #import "NSColor+NSColorHexadecimalValue.h"
 
 @class CodaPlugInsController;

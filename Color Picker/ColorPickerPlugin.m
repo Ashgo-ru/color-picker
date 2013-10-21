@@ -90,7 +90,10 @@ NSString * const kPluginName = @"Color Picker";
     [colorPanel setContinuous:YES];
     [colorPanel setMode:NSRGBModeColorPanel];
     [colorPanel setShowsAlpha:YES];
-
+    
+    if ( ! [[textView selectedText] isEqualToString:@""] && [textView selectedText].length <= 7)
+        [colorPanel setColor:[HXColor colorWithHexString:[textView selectedText]]];
+    
     [colorPanel makeKeyAndOrderFront:self];
 }
 

@@ -11,6 +11,7 @@
 		4D431FDF15D29F100083E2F0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4D431FDD15D29F100083E2F0 /* InfoPlist.strings */; };
 		4D431FE915D29F6F0083E2F0 /* ColorPickerPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D431FE815D29F6F0083E2F0 /* ColorPickerPlugin.m */; };
 		4DCD853515F128E30009CB52 /* NSColor+NSColorHexadecimalValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCD853415F128E30009CB52 /* NSColor+NSColorHexadecimalValue.m */; };
+		D8D74E781815BDB500C6F19A /* HexColor.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D74E771815BDB500C6F19A /* HexColor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,11 +23,13 @@
 		4D431FDC15D29F100083E2F0 /* Color Picker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Color Picker-Info.plist"; sourceTree = "<group>"; };
 		4D431FDE15D29F100083E2F0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4D431FE015D29F100083E2F0 /* Color Picker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Color Picker-Prefix.pch"; sourceTree = "<group>"; };
-		4D431FE615D29F440083E2F0 /* CodaPlugInsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CodaPlugInsController.h; path = ../../CodaPlugInsController.h; sourceTree = "<group>"; };
 		4D431FE715D29F6F0083E2F0 /* ColorPickerPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorPickerPlugin.h; sourceTree = "<group>"; };
 		4D431FE815D29F6F0083E2F0 /* ColorPickerPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorPickerPlugin.m; sourceTree = "<group>"; };
 		4DCD853315F128E30009CB52 /* NSColor+NSColorHexadecimalValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSColor+NSColorHexadecimalValue.h"; sourceTree = "<group>"; };
 		4DCD853415F128E30009CB52 /* NSColor+NSColorHexadecimalValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSColor+NSColorHexadecimalValue.m"; sourceTree = "<group>"; };
+		D8D74E741815BCC200C6F19A /* CodaPlugInsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodaPlugInsController.h; sourceTree = "<group>"; };
+		D8D74E761815BDB500C6F19A /* HexColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HexColor.h; sourceTree = "<group>"; };
+		D8D74E771815BDB500C6F19A /* HexColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HexColor.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,9 +83,8 @@
 		4D431FDA15D29F100083E2F0 /* Color Picker */ = {
 			isa = PBXGroup;
 			children = (
-				4D431FE615D29F440083E2F0 /* CodaPlugInsController.h */,
-				4DCD853315F128E30009CB52 /* NSColor+NSColorHexadecimalValue.h */,
-				4DCD853415F128E30009CB52 /* NSColor+NSColorHexadecimalValue.m */,
+				D8D74E751815BD9E00C6F19A /* Categories */,
+				D8D74E791815BDBD00C6F19A /* Libraries */,
 				4D431FE715D29F6F0083E2F0 /* ColorPickerPlugin.h */,
 				4D431FE815D29F6F0083E2F0 /* ColorPickerPlugin.m */,
 				4D431FDB15D29F100083E2F0 /* Supporting Files */,
@@ -98,6 +100,25 @@
 				4D431FE015D29F100083E2F0 /* Color Picker-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D8D74E751815BD9E00C6F19A /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				D8D74E761815BDB500C6F19A /* HexColor.h */,
+				D8D74E771815BDB500C6F19A /* HexColor.m */,
+				4DCD853315F128E30009CB52 /* NSColor+NSColorHexadecimalValue.h */,
+				4DCD853415F128E30009CB52 /* NSColor+NSColorHexadecimalValue.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		D8D74E791815BDBD00C6F19A /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				D8D74E741815BCC200C6F19A /* CodaPlugInsController.h */,
+			);
+			name = Libraries;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +185,7 @@
 			files = (
 				4D431FE915D29F6F0083E2F0 /* ColorPickerPlugin.m in Sources */,
 				4DCD853515F128E30009CB52 /* NSColor+NSColorHexadecimalValue.m in Sources */,
+				D8D74E781815BDB500C6F19A /* HexColor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
